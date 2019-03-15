@@ -1,0 +1,21 @@
+{
+  "extends": "../.eslintrc",
+  "env": {
+    "browser": true,
+    "commonjs": true
+  },
+  "globals": {
+    "$": true,
+    "angular": true,
+    "beforeEach": true,
+    "describe": true,
+    "document": true,
+    "expect": true,
+    "inject": true,
+    "it": true,
+    "window": true
+  },
+  "rules": {
+    "global-require": 0
+  }
+}

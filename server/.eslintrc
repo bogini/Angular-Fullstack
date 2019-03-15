@@ -1,0 +1,19 @@
+{
+  "extends": "../.eslintrc",
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "inject": true,
+    "beforeEach": true,
+    "it": true,
+    "describe": true,
+    "expect": true,
+    "jasmine": true,
+    "sinon": true,
+    "afterEach": true,
+    "before": true,
+    "after": true
+  }
+}

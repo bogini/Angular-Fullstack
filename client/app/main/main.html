@@ -1,0 +1,13 @@
+<div class="ui segment">
+  <h1 class="ui header">Things</h1>
+  <div class="ui segment" ng-class="{'loading': $ctrl.loading}" id="things">
+    <div class="ui middle aligned divided list" id="thingsList">
+      <div class="item" ng-repeat="thing in $ctrl.things">
+        <div class="content">
+          <h4 class="ui header">{{thing.title}}</h4>
+          <p>{{thing.body}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
