@@ -6,7 +6,7 @@
 const MainPage = function () {
   this.thingsContainer = element(by.css('#things'));
   this.thingsList = this.thingsContainer.element(by.css('#thingsList'));
-  this.thingsListItems = this.thingsList.element(by.css('.item'));
+  this.thingsListItems = this.thingsContainer.all(by.css('.thingItem'));
 };
 
 module.exports = new MainPage();

@@ -1,7 +1,6 @@
 // Protractor configuration
 // https://github.com/angular/protractor/blob/master/referenceConf.js
 
-
 var config = {
   // The timeout for each script run on the browser. This should be longer
   // than the maximum time your application needs to stabilize between tasks.

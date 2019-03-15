@@ -1,16 +1,25 @@
+'use strict';
+
 const config = browser.params;
 
-describe('Main View', () => {
+describe('Main View', function () {
   let page;
 
-  beforeEach(() => {
-    const promise = browser.get(`${config.baseUrl}/`);
+  beforeEach(function () {
+    const promise = browser.get(config.baseUrl + '/');
+
+    browser.wait(promise, 5000);
 
     page = require('./main.po');
+
     return promise;
   });
 
-  it('should include list with correct data', () => {
-    expect(page.thingsListItems.length).to.eventually.equal(2);
+  it('should have a title', () => {
+    expect(browser.getTitle()).to.eventually.be.eql('Full-Stack App');
+  });
+
+  it('should include list of items with correct data', () => {
+    expect(page.thingsListItems.count()).to.eventually.be.eql(2);
   });
 });

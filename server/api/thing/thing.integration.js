@@ -1,5 +1,3 @@
-
-
 /* globals describe, expect, it, beforeEach, afterEach */
 
 import request from 'supertest';
