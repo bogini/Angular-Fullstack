@@ -16,7 +16,6 @@ export class MainController {
       .then((res) => {
         this.things = res.data;
       })
-      .catch(console.error)
       .finally(() => {
         this.loading = false;
       });

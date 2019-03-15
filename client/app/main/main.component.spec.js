@@ -32,6 +32,6 @@ describe('Component: MainComponent', () => {
   it('should attach a list of things to the controller', () => {
     mainComponent.$onInit();
     $httpBackend.flush();
-    expect(mainComponent.things.length).to.equal(2);
+    expect(mainComponent.things.length).to.be.eql(2);
   });
 });
